@@ -1,0 +1,53 @@
+@import "tailwindcss" source("../");
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --nb-bg: #0b0d10;
+  --nb-bg-soft: #14171b;
+  --nb-surface: #1a1e23;
+  --nb-surface-hi: #22262c;
+  --nb-line: #2a2f36;
+  --nb-accent: #d7ff3f;
+  --nb-accent-dim: #9fd400;
+  --nb-text: #f4f6f2;
+  --nb-text-dim: #9aa3ad;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  background: var(--nb-bg);
+  color: var(--nb-text);
+}
+
+body {
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.font-display {
+  font-family: 'Archivo Black', 'Manrope', sans-serif;
+}
+
+.bg-noise {
+  background-image: radial-gradient(circle at 20% 20%, rgba(215, 255, 63, 0.08), transparent 45%),
+    radial-gradient(circle at 85% 15%, rgba(215, 255, 63, 0.05), transparent 40%),
+    radial-gradient(circle at 50% 100%, rgba(159, 212, 0, 0.07), transparent 50%);
+}
+
+.tap-target {
+  -webkit-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
